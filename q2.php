@@ -30,7 +30,7 @@ while ($line = fgets($fh)) {
             break;
         case 12:
             if (substr($line, 0, 1) == "0") {
-                // 047984461240  	MOB: (47) 9 8442-1245
+                // 047984461240 MOB: (47) 9 8442-1245
                 echo sprintf(
                     "Teste #" . $i . ": " . $line . " >> MOB: (%s) %s %s-%s",
                     substr($line, 1, 2),
